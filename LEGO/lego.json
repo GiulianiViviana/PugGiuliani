@@ -1,0 +1,26 @@
+{
+"lego" : [
+    {
+        "Nome": "Lego Harry Potter",
+        "Età" : "9-14",
+        "LinkIstruzioni" : "https://letsbuilditagain.com/free-lego-instructions.php?q=4709",
+        "ImgSrc": "lego-harry-potter.jpg",
+        "id" : "harry-potter"
+    },
+    {
+        "Nome": "Lego Nba",
+        "Età" : "9+",
+        "LinkIstruzioni" : "https://letsbuilditagain.com/instructions/3433/",
+        "ImgSrc": "lego-nba.jpg",
+        "id" : "nba"
+    },
+       {
+        "Nome": "Lego Avatar",
+        "Età" : "7+",
+        "LinkIstruzioni" : "https://letsbuilditagain.com/instructions/3829/",
+        "ImgSrc": "lego-avatar.jpg",
+        "id" : "avatar"
+    }
+
+]
+}
