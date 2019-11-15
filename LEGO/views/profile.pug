@@ -8,11 +8,17 @@ html
    header.header
          h1 #{title}
    div.profile
-     div.lego-image(style=`background: url('/images/${lego.imgSrc}') top center no-repeat; background-size: cover;`)
-     div.lego-details
-       h1.lego-name
-         | #{lego.Nome} 
-       h2.profile-Età
-         | #{lego.Età}
-       a.button.button-linkIstruzioni(href=`${lego.LinkIstruzioni}`)
+     div.profile-image(style=`background: url('/images/${leg.ImgSrc}') top center no-repeat; background-size: cover;`)
+     div.profile-details
+       h1.profile-name
+         | #{leg.Nome} 
+       h2.profile-Eta
+         | #{leg.Eta}
+       p.profile-tema
+         | #{leg.Tema}
+       p.profile-annouscita
+         | #{leg.Anno_Uscita}
+       h2.profile-prezzo
+         | #{leg.Prezzo}
+       a.button.button-linkIstruzioni(href=`${leg.LinkIstruzioni}`)
          | Istruzioni

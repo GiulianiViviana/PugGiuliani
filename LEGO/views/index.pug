@@ -8,10 +8,10 @@ html
    header.header
          h1 #{title}
    article.container
-     each lego in lego
-       div.lego
-         div.lego-image(style=`background: url('/images/${lego.imgSrc}') top center no-repeat; background-size: cover;`)
-         h2.lego-name
-           | #{lego.Nome}
-         a(href=`/profile?id=${lego.id}`)
+     each leg in lego
+       div.leg
+         div.leg-image(style=`background: url('/images/${leg.ImgSrc}') top center no-repeat; background-size: cover;`)
+         h2.leg-name
+           | #{leg.Nome}
+         a(href=`/profile?id=${leg.id}`)
            | Informazioni
