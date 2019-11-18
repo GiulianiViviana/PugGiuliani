@@ -1,7 +1,7 @@
 doctype html
 html
  head
-   title #{title}
+   title #{title} 
    link(rel='stylesheet', href='/css/style.css')
    meta(name="viewport" content="width=device-width, initial-scale=1")
  body
@@ -13,12 +13,12 @@ html
        h1.profile-name
          | #{leg.Nome} 
        h2.profile-Eta
-         | #{leg.Eta}
+         | Età: #{leg.Eta}
        p.profile-tema
-         | #{leg.Tema}
+         | Tema: #{leg.Tema}
        p.profile-annouscita
-         | #{leg.Anno_Uscita}
+         | Anno di uscita: #{leg.Anno_Uscita}
        h2.profile-prezzo
-         | #{leg.Prezzo}
+         | PREZZO: #{leg.Prezzo}
        a.button.button-linkIstruzioni(href=`${leg.LinkIstruzioni}`)
          | Istruzioni

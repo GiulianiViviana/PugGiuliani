@@ -15,7 +15,7 @@ app.get('/', function(req,res){
 app.get('/profile',(req, res) => {
     const leg = lego.profiles.find((l) => l.id === req.query.id);
     res.render('profile',{
-        title: `Lego ${leg.Nome}`,leg
+        title: `${leg.Nome}`,leg
     });
 });
 app.listen(3000, function () {
