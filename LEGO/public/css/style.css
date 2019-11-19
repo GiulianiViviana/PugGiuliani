@@ -61,6 +61,15 @@ body {
     height: 300px;
 
 }
+.imm2{
+    width: 300px;
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 
 
 /* Homepage Container

@@ -1,7 +1,9 @@
 var express = require('express');
 const lego = require('./lego.json');
 var app = express();
+var cors = require('cors');
 app.set('view engine','pug');
+app.use(cors());
 app.use(express.static(__dirname + '/public')); 
 
 app.get('/', function(req,res){
