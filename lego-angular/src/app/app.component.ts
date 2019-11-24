@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { lego } from './lego';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,14 +10,15 @@ import { Observable } from 'rxjs';
 export class AppComponent {
   title = 'lego-angular';
   data:Object;
+  results : lego[];
   o :Observable<Object>;
     constructor(private http: HttpClient) {}
 
     ngOnInit(): void {
-      // Make the HTTP request:
-      this.http.get('https://3000-c755be22-5791-478b-9055-f33be535d02a.ws-eu01.gitpod.io/').subscribe(data => {
-        this.data = data;
+      this.http.get<lego[]>('https://3000-dc1993c3-0ea4-463d-aac7-6f7a5a399fa0.ws-eu01.gitpod.io/api').subscribe(data => {
+         this.results = data['results'];
       });
     }
+
 
 }

@@ -13,6 +13,13 @@ app.get('/', function(req,res){
     lego: lego.profiles
     });
 });
+app.get('/api', function(req,res){
+    res.render('index', {
+    title: 'LEGO',
+    content : 'Pagina Lego',
+    lego: lego.profiles
+    });
+});
 
 app.get('/profile',(req, res) => {
     const leg = lego.profiles.find((l) => l.id === req.query.id);
